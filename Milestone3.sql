@@ -456,6 +456,45 @@ END;
 END CNIT372PROJECT;
 
 
+-- Package utility
+
+set serveroutput on;
+
+DECLARE
+v_count number;
+BEGIN
+
+v_count := 1;
+
+FOR v_count IN 1 .. 10 LOOP
+
+    if v_count = 1 then
+    CNIT372PROJECT.QUESTION1('2023-01-06', '2023-02-24');
+    elsif v_count = 2 then
+    CNIT372PROJECT.QUESTION2();
+    elsif v_count = 3 then
+    CNIT372PROJECT.QUESTION3();
+     elsif v_count = 4 then
+    CNIT372PROJECT.QUESTION4();
+     elsif v_count = 5 then
+    CNIT372PROJECT.QUESTION5();
+     elsif v_count = 6 then
+    CNIT372PROJECT.QUESTION6();
+     elsif v_count = 7 then
+    CNIT372PROJECT.QUESTION7();
+     elsif v_count = 8 then
+    CNIT372PROJECT.QUESTION8();
+     elsif v_count = 9 then
+    CNIT372PROJECT.QUESTION9();
+     elsif v_count = 10 then
+    CNIT372PROJECT.QUESTION10();
+    
+
+    end if;
+    end loop;
+end;
+
+
 
 
 
