@@ -185,7 +185,7 @@ v_output number;
 BEGIN
   SELECT count(*) into v_output
   FROM watch_history
-  WHERE title LIKE '%GTA%';
+  WHERE title LIKE '%GTA%' OR title LIKE '%Grand Theft Auto%';
 
   DBMS_OUTPUT.PUT_LINE('The number of Grand Theft Auto videos watched: ' || v_output);
 END;
